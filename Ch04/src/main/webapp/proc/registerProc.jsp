@@ -9,22 +9,22 @@
 		<h3>useBean 액션태그</h3>
 		
 		<%
-			
+			request.setCharacterEncoding("UTF-8");
 			// 전송 데이터 수신
 			/*
-			string name = request.getParameter("name")
-			string name = request.getParameter("birth")
-			string name = request.getParameter("addr")
-			string name = request.getParameter("gender")
-			string name = request.getParameter("hobby")
+			String   name    = request.getParameter("name");
+			String   birth   = request.getParameter("birth");
+			String   addr    = request.getParameter("addr");
+			String   gender  = request.getParameter("gender");
+			String[] hobbies = request.getParameterValues("hobby");
 			*/
 		%>
-		<jsp:useBean id="n" class="w kr.co.jboard.bean.UserBe">
-				<jsp:setProperty property="name" name="ub"/>
-				<jsp:setProperty property="birth" name="ub"/>
-				<jsp:setProperty property="addr" name="ub"/>
-				<jsp:setProperty property="gender" name="ub"/>
-				<jsp:setProperty property="hobbies" name="ub"/>
+		<jsp:useBean id="ub" class="bean.UserBean">
+			<jsp:setProperty property="name" name="ub"/>
+			<jsp:setProperty property="birth" name="ub"/>
+			<jsp:setProperty property="addr" name="ub"/>
+			<jsp:setProperty property="gender" name="ub"/>
+			<jsp:setProperty property="hobbies" name="ub"/>
 		</jsp:useBean>
 		
 		<p>
@@ -32,7 +32,7 @@
 			생년월일 : <%= ub.getBirth() %><br/>
 			주소 : <%= ub.getAddr() %><br/>
 			성별 : <%= ub.getGender() == 1 ? "남자" : "여자" %><br/>
-			취미 : <%= String.join(", ", ub.getHobbies()) %><br/>	
+			취미 : <%= String.join(", ", ub.getHobbies()) %><br/>		
 		</p>
 		
 	</body>
