@@ -18,7 +18,7 @@ import kr.co.farmstory1.db.Sql;
 
 public class ArticleDAO {
 
-	Logger logger = LoggerFactory.getLogger(this.getClass());
+	Logger logger = java.lang.System.Logger.getLogger(this.getClass());
 	
 	private static ArticleDAO instance = new ArticleDAO();
 	public static ArticleDAO getInstance() {
@@ -498,3 +498,13 @@ public class ArticleDAO {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
