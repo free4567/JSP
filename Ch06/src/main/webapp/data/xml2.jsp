@@ -1,6 +1,6 @@
-%@page import="org.jdom2.output.Format"%>
 <%@page import="org.jdom2.output.Format"%>
-<%@page import="kr.co.jboard1.bean.Userbean"%>
+<%@page import="org.jdom2.output.Format"%>
+<%@page import="kr.co.board1.bean.Userbean"%>
 <%@page import="org.jdom2.output.XMLOutputter"%>
 <%@page import="org.jdom2.Element"%>
 <%@page import="org.jdom2.Document"%>

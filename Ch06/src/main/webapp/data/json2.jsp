@@ -1,16 +1,16 @@
-<%@page import="org.apache.jasper.compiler.Node.UseBean"%>
 <%@page import="com.mysql.cj.xdevapi.JsonArray"%>
 <%@page import="com.google.gson.Gson"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
-<%@page import="kr.co.jboard1.bean.UserBean"%>
+<%@page import="bean.UserBean"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="config.JDBC"%>
 <%@ page contentType="application/json;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<UseBean> users = new ArrayList<>();
+	List<UserBean> usersList = new ArrayList<>();
+
 	try{
 		Connection conn = JDBC.getInstance().getConnection();
 		Statement stmt = conn.createStatement();
@@ -33,6 +33,7 @@
 	}catch(Exception e){
 		e.printStackTrace();
 	}
+
 	// Gson 라이브러리 함수를 이용해 List를 Json으로 변환
 	Gson gson = new Gson();
 	String jsonData = gson.toJson(users);
