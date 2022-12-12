@@ -30,7 +30,7 @@
         <header>
             <h3>Board System v2.0</h3>
             <p>
-                <span>철학자바님 반갑습니다</span>[회원정보]
+                <span>프리님 반갑습니다</span>[회원정보]
                 <a href="./user/login.html">[로그아웃]</a>
             </p>
         </header>
@@ -53,19 +53,19 @@
                     <tr>
                         <td>347</td>
                         <td><a href="./view.html">파일첨부테스트[0]</a></td>
-                        <td>철학자바</td>
+                        <td>프리</td>
                         <td>22-11-25</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>346</td>
                         <td><a href="./view.html">제목입니다[0]</a></td>
-                        <td>철학자바</td>
+                        <td>프리</td>
                         <td>22-11-25</td>
                         <td>0</td>
                     </tr>
                 </table>
-                <a href="./write.html" class="btn btnWrite">ê¸ì°ê¸°</a>
+                <a href="./write.html" class="btn btnWrite">0</a>
                 
             </section>
         </main>

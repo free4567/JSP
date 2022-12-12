@@ -11,8 +11,8 @@
         <header>
             <h3>Board System v2.0</h3>
             <p>
-                <span>íê¸¸ë</span>ë ë°ê°ìµëë¤.
-                <a href="#">[ë¡ê·¸ìì]</a>
+                <span>프리님 반갑습니다</span>[회원정보].
+                <a href="#">[로그아웃]</a>
             </p>
         </header>
         <main id="board">
@@ -20,19 +20,19 @@
 
                 <form action="#">
                     <table border="0">
-                        <caption>ê¸ì°ê¸°</caption>
+                        <caption>글쓰기</caption>
                         <tr>
-                            <th>ì ëª©</th>
-                            <td><input type="text" name="title" placeholder="ì ëª©ì ìë ¥íì¸ì."/></td>
+                            <th>제목</th>
+                            <td><input type="text" name="title" placeholder="제목을 입력하세요"/></td>
                         </tr>
                         <tr>
-                            <th>ë´ì©</th>
+                            <th>내용</th>
                             <td>
                                 <textarea name="content"></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <th>íì¼</th>
+                            <th>파일</th>
                             <td>
                                 <input type="file" name="file"/>
                             </td>
@@ -40,15 +40,15 @@
                     </table>
                     
                     <div>
-                        <a href="./list.html" class="btn btnCancel">ì·¨ì</a>
-                        <input type="submit" value="ìì±ìë£" class="btn btnComplete"/>
+                        <a href="./list.html" class="btn btnCancel">취소</a>
+                        <input type="submit" value="작성완료" class="btn btnComplete"/>
                     </div>
                 </form>
 
             </section>
         </main>
         <footer>
-            <p>âCopyright chhak.or.kr</p>
+            <p>Copyright chhak.or.kr</p>
         </footer>
     </div>    
 </body>
